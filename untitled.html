@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sahil Jangir Digital Store</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background: #111;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 26px;
+        font-weight: bold;
+    }
+    .container {
+        max-width: 900px;
+        margin: 30px auto;
+        background: #999;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    }
+    .product-img {
+        width: 100%;
+        max-width: 300px;
+        display: block;
+        margin: 0 auto 20px auto;
+        border-radius: 10px;
+    }
+    .product-title {
+        font-size: 28px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .price {
+        font-size: 22px;
+        color: #e00000;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    .description {
+        font-size: 16px;
+        line-height: 1.6;
+        white-space: pre-line;
+    }
+    #fullDesc {
+        display: none;
+    }
+    .view-btn {
+        color: #0056ff;
+        cursor: pointer;
+        font-weight: bold;
+        margin-top: 10px;
+        display: inline-block;
+    }
+    button {
+        display: block;
+        width: 200px;
+        margin: 25px auto;
+        padding: 12px;
+        background: #23a333;
+        color: #fff;
+        font-size: 18px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    button:hover {
+        background: #1e7e34;
+    }
+</style>
+
+</head>
+
+<body>
+
+<header>Sahil Jangir Digital Store</header>
+
+<div class="container">
+
+    <!-- Product Image -->
+<img src="https://i.ibb.co/hRPLnHkX/file-00000000ccbc720881bbe076270ece3a.png" class="product-img" alt="file-00000000ccbc720881bbe076270ece3a" border="0">
+    <div class="product-title">
+        Money Mindset Map - The Way of Your Wealth
+    </div>
+
+    <div class="price">
+        Price – ₹299
+    </div>
+
+    <!-- Short Description -->
+    <div class="description" id="shortDesc">
+      “Money Mindset Map – The Way of Your Wealth”
+यह पुस्तक आपके भीतर छिपी हुई आर्थिक शक्ति को जगाने वाली एक मार्गदर्शिका है। Money Mindset Map आपको यह समझाती है कि धन पहलेमन में बनता है—फिर जीवन में। जैसे ही आप अपने विचारों की दिशा बदलते हैं, धन अपने आप आपकी ओर बढ़ने लगता है।
+
+इस पुस्तक में आप सीखेंगे—
+
+★ अपनी सोच को अभाव से समृद्धि की ओर कैसे मोड़ें
+★ ऐसी दैनिक आदतें कैसे विकसित करें जो निरंतर धन आकर्षित करें
+★ भय और संदेह को कैसे दूर करें ताकि आप निडर वित्तीय निर्णय ले सकें।
+    </div>
+
+    <!-- Full Description (Hidden by default) -->
+    <div class="description" id="fullDesc">
+“Money Mindset Map – The Way of Your Wealth”
+यह पुस्तक आपके भीतर छिपी हुई आर्थिक शक्ति को जगाने वाली एक मार्गदर्शिका है। Money Mindset Map आपको यह समझाती है कि धन पहले मन में बनता है—फिर जीवन में। जैसे ही आप अपने विचारों की दिशा बदलते हैं, धन अपने आप आपकी ओर बढ़ने लगता है।
+
+इस पुस्तक में आप सीखेंगे—
+
+★ अपनी सोच को अभाव से समृद्धि की ओर कैसे मोड़ें
+
+★ ऐसी दैनिक आदतें कैसे विकसित करें जो निरंतर धन आकर्षित करें
+
+★ भय और संदेह को कैसे दूर करें ताकि आप निडर वित्तीय निर्णय ले सकें
+
+★ अवसरों को पहचानने और सही समय पर कार्य करने की कला
+
+★ वह मानसिक सूत्र जिसे अपनाकर साधारण लोग असाधारण कमाई तक पहुँचे
+
+
+यह पुस्तक केवल प्रेरणा नहीं देती—यह आपके भीतर तत्काल कार्य-ऊर्जा भर देती है। इसे पढ़ते ही आपके मन में कमाई के नए विचार, नई संभावनाएँ और आगे बढ़ने की प्रबल इच्छा जाग उठती है।
+
+यह एक ऐसी मार्गरेखा है जो आपको आपके धनवान भविष्य तक पहुँचाने की शुरुआत करती है।
+    </div>
+
+    <!-- View More / View Less Button -->
+    <span class="view-btn" id="viewBtn" onclick="toggleDesc()">View More</span>
+
+    <!-- Order Button -->
+    <button onclick="window.location.href='https://sahil-9602.github.io/Order-your-book-/'">
+        Order Now
+    </button>
+
+</div>
+
+<script>
+function toggleDesc() {
+    let full = document.getElementById("fullDesc");
+    let short = document.getElementById("shortDesc");
+    let btn = document.getElementById("viewBtn");
+
+    if (full.style.display === "none") {
+        full.style.display = "block";
+        short.style.display = "none";
+        btn.innerText = "View Less";
+    } else {
+        full.style.display = "none";
+        short.style.display = "block";
+        btn.innerText = "View More";
+    }
+}
+</script>
+
+</body>
+</html>
